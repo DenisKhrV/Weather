@@ -27,7 +27,7 @@ public class WeatherServiceProduction implements WeatherService {
     @Autowired
     private RestTemplate restTemplate;
     public Weather getWeather(String city) {
-        logger.debug("ффффффффффффy: {}", city);
+        logger.debug("Requesting weather for city: {}", city);
         Weather weather = restTemplate.exchange(
                 weatherUrl,
                 HttpMethod.GET,
@@ -36,11 +36,11 @@ public class WeatherServiceProduction implements WeatherService {
                 city,
                 weatherApiKey
         ).getBody();
-        logger.debug("ааааааааааа {} is {}", city, weather);
+        logger.debug("The weather for {} is {}", city, weather);
         return weather;
     }
 
     public void feature1() {
-        System.out.println("ФИЧА");
+        System.out.println("feature1");
     }
 }
