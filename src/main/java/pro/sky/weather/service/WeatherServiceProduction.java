@@ -41,7 +41,7 @@ public class WeatherServiceProduction implements WeatherService {
     }
 
     public void feature1() {
-        System.out.println("ФИЧА");
-        System.out.println("feature1");
+        System.out.println("ФИЧА3");
+        System.out.println("feature3");
     }
 }
