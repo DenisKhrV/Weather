@@ -40,4 +40,7 @@ public class WeatherServiceProduction implements WeatherService {
         return weather;
     }
 
+    public void feature1() {
+        System.out.println("tes");
+    }
 }
