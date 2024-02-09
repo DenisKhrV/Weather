@@ -28,7 +28,6 @@ public class WeatherServiceProduction implements WeatherService {
     private RestTemplate restTemplate;
     public Weather getWeather(String city) {
         logger.debug("Requesting weather for city: {}", city);
-        System.out.println("DEV");
         Weather weather = restTemplate.exchange(
                 weatherUrl,
                 HttpMethod.GET,
